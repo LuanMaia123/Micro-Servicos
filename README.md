@@ -32,5 +32,14 @@ Modelo:
 
 <img src="https://github.com/LuanMaia123/desafio/blob/master/8721%20%5BConvertido%5D-01.jpg" alt="Modelo" style="max-width:100%;">
 
+# Para o trafico:
 
+Imaginei a minha solução com 3 microserviços, nunca trabalhei com micro-serviços porém pesquisei sobre formas de acesso a multiplas bases de dados e no desafio é exposto junto com Nano-serviços. Então optei por este método.
 
+# Escalabilidade
+Para escalabilidade com mais pesquisa e estudo, conseguindo ter acesso as ferramentas, eu optaria pelo AWS, como o uso de Lambda, EC2, ElasticSearch etc. Aplicando da melhor forma para os 3 tipos de bases.
+
+# Desenvolvimento
+
+Para o desenvolvimento da solução optei por usar tecnologias que tenho mais dominio/conhecimento como java, Springboot.
+Aceitei o desafio de usar tecnologias que não conheço a fim de tentar chegar o mais proximo da solução desejada, mesmo acreditando que a diversas formas de solucionar o "problema".
