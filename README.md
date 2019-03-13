@@ -46,3 +46,5 @@ Para escalabilidade com mais pesquisa e estudo, conseguindo ter acesso as ferram
 Para o desenvolvimento da solução optei por usar tecnologias que tenho mais dominio/conhecimento como java, Springboot.
 Aceitei o desafio de usar tecnologias que não conheço a fim de tentar chegar o mais proximo da solução desejada com pelo menos algumas das tecnologias desejadas.
 
+# Execução:
+
