@@ -17,10 +17,11 @@ Escolhi o Postgresql, após várias pesquisas verifiquei que o mesmo possui vár
 
 Base B:
 
-Escolhi o Mysql, ele é mais performatico que o postgresql e também possui niveis de segurança, mantive o token e o controle de sql injection pois como ainda existem dados criticos, é necessário manter-los longe de qualquer ataque. Também já tive experiência com esse banco de dados por esses motivos escolhi ele.
+Escolhi o Mysql, ele é mais performatico que o postgresql e também possui niveis de segurança, mantive o token como controle de acesso. Também já tive experiência com esse banco de dados por esses motivos escolhi ele.
 
 - Segurança através das contas dos usuários, e autenticação via TOKEN JWT.
-- Controle de sql injection.
+
+Pensei em usar alguma função externa para realizar o calculo e apenas extrair os dados necessários dessa base mantendo assim uma maior segurança dos dados calculados.
 
 Base C:
 
