@@ -30,16 +30,16 @@ O Eureka Client possui um serviço básico de load-balancing que utiliza a estra
 Clients não escritos em Java podem se comunicar com o Eureka Server através de uma API REST.
 
 Para a implementação:
--SpringBoot
--Maven
--Oauth JWT
--Spring Security
--Eureka server e Cliente
--Postgresql
--Mysql
--MongoDb
--Intellij
--Rest
+- SpringBoot
+- Maven
+- Oauth JWT
+- Spring Security
+- Eureka server e Cliente
+- Postgresql
+- Mysql
+- MongoDb
+- Intellij
+- Rest
 
 ### 1-Service discovery Eureka discovery-server
 Configuração básica para criação do Eureka server.
