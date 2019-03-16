@@ -13,7 +13,7 @@ Quando comecei a desenvolver a solução eu estava planejando jogar as imagens d
 
 ### Nova Abordagem:
 
-<img src="https://github.com/LuanMaia123/desafio/blob/master/novo-01.jpg" alt="Modelo2" style="max-width:100%;">
+<img src="https://github.com/LuanMaia123/desafio/blob/master/NOVO-01.jpg" alt="Modelo2" style="max-width:100%;">
 
 Decidi iniciar com outra abordagem, após algumas pesquisas verifiquei a possibilidade de ultilizar o Eureka:
 
