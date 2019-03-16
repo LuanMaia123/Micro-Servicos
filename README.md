@@ -5,11 +5,15 @@ Vamos supor que existam três grandes bases de dados externas que organizam noss
 
 # Desenvolvimento
 
-Minha idéia inicial:
+### Minha idéia inicial:
 
 <img src="https://github.com/LuanMaia123/desafio/blob/master/8721%20%5BConvertido%5D-01.jpg" alt="Modelo" style="max-width:100%;">
 
 Quando comecei a desenvolver a solução eu estava planejando jogar as imagens dos 3 micro-serviços e dos DBs em um docker-compose(Cheguei a fazer uma parte) porém no meio do processo o docker aparentemente não funciona muito bem no windows, e comecei a ter diversos problemas, desde porta ja está sendo usada ( Apesar de ter removido as imagens e os containers) e também problemas para fazer pull de imagens, como nunca tinha usado essa tecnologia antes, só sabia da existência e beneficios foi um bom estudo porém, não queria disperdiçar mais tempo com algo que estava parecendo mais problema de compatibilidade com SO do que falta de conhecimento.
+
+### Nova Abordagem:
+
+<img src="https://github.com/LuanMaia123/desafio/blob/master/novo-01.jpg" alt="Modelo2" style="max-width:100%;">
 
 Decidi iniciar com outra abordagem, após algumas pesquisas verifiquei a possibilidade de ultilizar o Eureka:
 
@@ -82,6 +86,8 @@ Por se tratar de alta velocidade de acesso aos dados e não necessitar de segura
 
 
 Desta forma as aplicações ficam independentes, para uma melhor disponibilização, manutenção sem que eles se afetem.
+
+
 
 # Escalabilidade
 
