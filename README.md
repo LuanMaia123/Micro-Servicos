@@ -82,12 +82,10 @@ Poderia ser criado outro micro-serviço para realizar o calculo do score, deixe 
 
 Base C:
 
-Por se tratar de alta velocidade de acesso aos dados e não necessitar de segurança. Não tenho conhecimento, porém nas pesquisas que fiz achei interessante a solução dado o problema aqui exposto.
+MongoDB Por se tratar de alta velocidade de acesso aos dados e não necessitar de segurança. Não tenho conhecimento, porém nas pesquisas que fiz achei interessante a solução dado o problema aqui exposto.
 
 
 Desta forma as aplicações ficam independentes, para uma melhor disponibilização, manutenção sem que eles se afetem.
-
-
 
 # Escalabilidade
 
