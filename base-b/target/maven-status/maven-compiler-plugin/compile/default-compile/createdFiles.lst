@@ -1,0 +1,5 @@
+com\tadeucruz\springoauth2jwt\configuration\security\oauth2\MethodSecurityConfiguration.class
+com\tadeucruz\springoauth2jwt\rest\EndPoint.class
+com\tadeucruz\springoauth2jwt\configuration\security\oauth2\JWTConfiguration.class
+com\tadeucruz\springoauth2jwt\ResourceServerApplication.class
+com\tadeucruz\springoauth2jwt\configuration\security\oauth2\ResourceServerConfigurer.class
