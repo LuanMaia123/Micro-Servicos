@@ -29,7 +29,7 @@ public class CreateDefaultUserListener implements ApplicationListener<ContextRef
         user.setEmail("test@test.com");
         user.setEnabled(1);
         user.setUserName("user");
-        user.setPassword("1q2w3e");
+        user.setPassword("12345");
         userRepository.save(user);
 
         UserRole role = new UserRole();
@@ -43,7 +43,7 @@ public class CreateDefaultUserListener implements ApplicationListener<ContextRef
         user.setEmail("test@test.com");
         user.setEnabled(1);
         user.setUserName("admin");
-        user.setPassword("1q2w3e");
+        user.setPassword("12345");
         userRepository.save(user);
 
         role = new UserRole();
