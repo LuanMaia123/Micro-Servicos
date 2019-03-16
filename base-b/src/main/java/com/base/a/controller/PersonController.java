@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Random;
 
 @RestController
 @RequestMapping(value = "/person")
@@ -34,5 +35,20 @@ public class PersonController {
         return new ResponseEntity<Person>(person, HttpStatus.OK);
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @RequestMapping(value = "/calculator")
+    public ResponseEntity<String> calculator() {
+        Random random = new Random();
+        int x = random.nextInt(1001);
+        String msg;
+        if(x <= 200){
+            msg = "Low Score :" + x;
+        }else if(x >= 201 && x <=600){
+            msg = "Medium Score :" + x;
+        }else{
+            msg = "Good Score! :" + x;
+        }
+        return new ResponseEntity<String>(msg, HttpStatus.OK);
+    }
 
 }
