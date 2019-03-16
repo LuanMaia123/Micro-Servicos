@@ -40,6 +40,7 @@ Para a implementação:
 - MongoDb
 - Intellij
 - Rest
+- H2
 
 ### 1-Service discovery Eureka discovery-server
 Configuração básica para criação do Eureka server.
@@ -69,10 +70,10 @@ Escolhi o Postgresql, após várias pesquisas verifiquei que o mesmo possui vár
 - Controle de sql injection. (pesquisar as melhores formas de fazer esta ação)
 
 - EndPoints: acessar com o Bearer token gerado no Authorization.
-http://localhost:8081/person/all
-http://localhost:8081/person/{id}
-http://localhost:8081/debt/all
-http://localhost:8081/debt/{id}
+- http://localhost:8081/person/all
+- http://localhost:8081/person/{id}
+- http://localhost:8081/debt/all
+- http://localhost:8081/debt/{id}
 
 ### 4-Micro-serviço base B
 
@@ -85,10 +86,10 @@ Escolhi o Mysql, ele é mais performatico que o postgresql e também possui nive
 Poderia ser criado outro micro-serviço para realizar o calculo do score, deixe por meio de um endpoint que retorna um valor randomico.
 
 - EndPoints: acessar com o Bearer token gerado no Authorization.
-http://localhost:8082/person/all
-http://localhost:8082/person/{id}
-http://localhost:8082/asset/all
-http://localhost:8082/asset/{id}
+- http://localhost:8082/person/all
+- http://localhost:8082/person/{id}
+- http://localhost:8082/asset/all
+- http://localhost:8082/asset/{id}
 ### 5-Micro-serviço base C
 
 Base C:
