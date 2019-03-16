@@ -1,0 +1,12 @@
+com\tadeucruz\springoauth2jwt\configuration\security\oauth2\JWTConfiguration.class
+com\tadeucruz\springoauth2jwt\model\User.class
+com\tadeucruz\springoauth2jwt\configuration\security\oauth2\AuthorizationServerConfiguration.class
+com\tadeucruz\springoauth2jwt\configuration\security\userdetails\CustomUserDetails.class
+com\tadeucruz\springoauth2jwt\repository\UserRolesRepository.class
+com\tadeucruz\springoauth2jwt\configuration\security\oauth2\JWTTokenEnhancer.class
+com\tadeucruz\springoauth2jwt\configuration\security\userdetails\CustomUserDetailsService.class
+com\tadeucruz\springoauth2jwt\AuthorizationServerApplication.class
+com\tadeucruz\springoauth2jwt\model\UserRole.class
+com\tadeucruz\springoauth2jwt\repository\UserRepository.class
+com\tadeucruz\springoauth2jwt\configuration\security\WebSecurityConfigurer.class
+com\tadeucruz\springoauth2jwt\configuration\boot\CreateDefaultUserListener.class

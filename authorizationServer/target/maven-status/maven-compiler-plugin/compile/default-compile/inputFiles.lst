@@ -1,0 +1,12 @@
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\boot\CreateDefaultUserListener.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\model\User.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\security\userdetails\CustomUserDetailsService.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\security\oauth2\AuthorizationServerConfiguration.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\repository\UserRolesRepository.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\security\oauth2\JWTConfiguration.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\security\oauth2\JWTTokenEnhancer.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\security\userdetails\CustomUserDetails.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\model\UserRole.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\repository\UserRepository.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\AuthorizationServerApplication.java
+C:\Users\Luan\Downloads\spring-oauth2-jwt-master\authorizationServer\src\main\java\com\tadeucruz\springoauth2jwt\configuration\security\WebSecurityConfigurer.java
