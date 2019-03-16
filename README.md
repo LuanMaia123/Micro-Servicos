@@ -99,6 +99,8 @@ MongoDB Por se tratar de alta velocidade de acesso aos dados e não necessitar d
 
 Desta forma as aplicações ficam independentes, para uma melhor disponibilização, manutenção sem que eles se afetem.
 
+Claro que essas são aplicações simples objetivando apenas mostrar uma forma de solução para o exposto.
+
 # Escalabilidade
 
 Para escalabilidade com mais pesquisa e estudo, conseguindo ter acesso as ferramentas, eu optaria pelo AWS, como o uso de Lambda, EC2, ElasticSearch etc. Aplicando da melhor forma para os 3 tipos de bases.
@@ -106,4 +108,21 @@ Para escalabilidade com mais pesquisa e estudo, conseguindo ter acesso as ferram
 
 
 # Execução:
+
+Deve-se Executar incialmente o servidor Eureka.
+Seguindo pelo micro-serviço Authorization
+E as outras Bases.
+
+Com o maven install pode ser montado o JAR:
+mvn install
+
+Com o comando pode rodar a aplicação em uma porta diferente tendo assim varias 
+instancias da aplicação no Eureka Server:
+
+java -Dserver.port={PORTA NÃO USADA} -jar {NOME DO JAR DA APLICAÇÃO}
+
+Por dentro da IDE: 
+Rodar um clean e install 
+
+
 
