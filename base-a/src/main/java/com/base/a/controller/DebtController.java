@@ -28,7 +28,7 @@ public class DebtController {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @GetMapping(value = "/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Debt> read(@PathVariable long id) {
         Debt debt = debtRepository.findOne(id);
         return new ResponseEntity<Debt>(debt, HttpStatus.OK);
