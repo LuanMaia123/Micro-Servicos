@@ -90,12 +90,16 @@ Poderia ser criado outro micro-serviço para realizar o calculo do score, deixe 
 - http://localhost:8082/person/{id}
 - http://localhost:8082/asset/all
 - http://localhost:8082/asset/{id}
+- http://localhost:8082/person/calculator
 ### 5-Micro-serviço base C
 
 Base C:
 
 MongoDB Por se tratar de alta velocidade de acesso aos dados e não necessitar de segurança. Não tenho conhecimento, porém nas pesquisas que fiz achei interessante a solução dado o problema aqui exposto.
 
+- EndPoints: acessar com o Bearer token gerado no Authorization.
+- http://localhost:8083/person/all
+- http://localhost:8083/person/{id}
 
 Desta forma as aplicações ficam independentes, para uma melhor disponibilização, manutenção sem que eles se afetem.
 
@@ -108,6 +112,8 @@ Para escalabilidade com mais pesquisa e estudo, conseguindo ter acesso as ferram
 
 
 # Execução:
+Arquivo application.properties esta com as configurações para os meus DBS locais
+Alterar usuario e senha para o seu caso.
 
 Deve-se Executar incialmente o servidor Eureka.
 Seguindo pelo micro-serviço Authorization
@@ -123,6 +129,7 @@ java -Dserver.port={PORTA NÃO USADA} -jar {NOME DO JAR DA APLICAÇÃO}
 
 Por dentro da IDE: 
 Rodar um clean e install 
+
 
 
 
