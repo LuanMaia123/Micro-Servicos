@@ -69,6 +69,8 @@ Escolhi o Postgresql, após várias pesquisas verifiquei que o mesmo possui vár
 - Criptografia de dados. (não aplicado no desafio)
 - Controle de sql injection. (pesquisar as melhores formas de fazer esta ação)
 
+Para uma aplicação real para produção, seria necessário aplicar essas formas de segurança. Provavelmente com mais pesquisa eu acharia algo para deixar ainda mais segura a aplicação.
+
 - EndPoints: acessar com o Bearer token gerado no Authorization.
 - http://localhost:8081/person/all
 - http://localhost:8081/person/{id}
@@ -91,15 +93,15 @@ Poderia ser criado outro micro-serviço para realizar o calculo do score, deixe 
 - http://localhost:8082/asset/all
 - http://localhost:8082/asset/{id}
 - http://localhost:8082/person/calculator
+
 ### 5-Micro-serviço base C
 
 Base C:
 
 MongoDB Por se tratar de alta velocidade de acesso aos dados e não necessitar de segurança. Não tenho conhecimento, porém nas pesquisas que fiz achei interessante a solução dado o problema aqui exposto.
 
-- EndPoints: acessar com o Bearer token gerado no Authorization.
-- http://localhost:8083/person/all
-- http://localhost:8083/person/{id}
+- http://localhost:8083/persons/all
+- http://localhost:8083/persons/{id}
 
 Desta forma as aplicações ficam independentes, para uma melhor disponibilização, manutenção sem que eles se afetem.
 
