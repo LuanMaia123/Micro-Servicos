@@ -28,7 +28,7 @@ public class PersonController {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @RequestMapping(value = "/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Person> read(@PathVariable long id) {
         Person person = personRepository.findOne(id);
         return new ResponseEntity<Person>(person, HttpStatus.OK);
