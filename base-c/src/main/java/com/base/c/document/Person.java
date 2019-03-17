@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.ArrayList;
 import java.util.List;
 
-@Document(collection = "Hotels")
+@Document(collection = "Persons")
 public class Person {
     @Id
     private String id;
@@ -24,6 +24,14 @@ public class Person {
         this.last_query = last_query;
         this.lastPurchases = lastPurchases;
         this.transactions = transactions;
+    }
+    
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getLast_query() {
