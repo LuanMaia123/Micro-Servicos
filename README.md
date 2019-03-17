@@ -9,13 +9,14 @@ Vamos supor que existam três grandes bases de dados externas que organizam noss
 
 <img src="https://github.com/LuanMaia123/desafio/blob/master/8721%20%5BConvertido%5D-01.jpg" alt="Modelo" style="max-width:100%;">
 
-Quando comecei a desenvolver a solução eu estava planejando jogar as imagens dos 3 micro-serviços e dos DBs em um docker-compose(Cheguei a fazer uma parte) porém no meio do processo o docker aparentemente não funciona muito bem no windows, e comecei a ter diversos problemas, desde porta ja está sendo usada ( Apesar de ter removido as imagens e os containers) e também problemas para fazer pull de imagens, como nunca tinha usado essa tecnologia antes, só sabia da existência e beneficios foi um bom estudo porém, não queria disperdiçar mais tempo com algo que estava parecendo mais problema de compatibilidade com SO do que falta de conhecimento.
+Quando comecei a desenvolver a solução optei por jogar as imagens dos 3 micro-serviços, e dos DBs, em um docker-compose. Porém durante o desenvolvimento o docker mostrou-se incompativel com o sistema windowns, apesar de ter removido as imagens e os containers, apresentaram-se diversos problemas, desde porta ja está sendo usada, assim como problemas para fazer pull de imagens. 
+O desafio me deu a oportunidade de aprofundar meus conhecimentos e coloca-los em prática, já que nunca havia tido contato com tal tecnologia anteriormente. Tendo isso em mente, resolvi por seguir um caminho diferente, com o intuito de economizar tempo, uma vez que se tratava de problema de compatibilidade com SO, e não de falta de conhecimento.
 
 ### Nova Abordagem:
 
 <img src="https://github.com/LuanMaia123/desafio/blob/master/NOVO-01.jpg" alt="Modelo2" style="max-width:100%;">
 
-Decidi iniciar com outra abordagem, após algumas pesquisas verifiquei a possibilidade de ultilizar o Eureka:
+Após fazer algumas pesquisas verifiquei a possibilidade de ultilização do Eureka:
 
 Eureka é uma solução de Service Discovery open source desenvolvida pela Netflix e é composta pelos módulos Eureka Server e Eureka Client.   
 
@@ -48,9 +49,9 @@ Configuração básica para criação do Eureka server.
 Com isso resolvi criar mais alguns micro-serviços:
 
 ### 2-Micro-serviço de autenticação  authorization
-Aplicação simples, com dois usuários pré-criados, um com ROLE USER e outro com ADMIN. Para esta ultilizei o banco de dados H2.
+Aplicação simples com dois usuários pré-criados, um com ROLE USER e outro com ADMIN. Para esta ultilizei o banco de dados H2.
 
-Este micro-serviço vai está na porta 8080.
+Este micro-serviço estará na porta 8080.
 
 username=user password=12345 Role USER
 username=admin password=12345 Role ADMIN
@@ -63,13 +64,13 @@ Com o token gerado será possivel acessar os endpoints dos outros micro-serviço
 ### 3-Micro-serviço base A
 Base A:
 
-Escolhi o Postgresql, após várias pesquisas verifiquei que o mesmo possui vários niveis de segurança e já tive contato com ele nas experiências que tive até hoje.
+Escolhi o Postgresql. Após nova pesquisa verifiquei que o mesmo possui enumeros niveis de segurança, além de já estar familiarizado com o este banco de dados.
 
+Algumas das ações que podem ser utilizadas:
 - Segurança através das contas dos usuários, e autenticação via TOKEN JWT com ROLES.
 - Criptografia de dados. (não aplicado no desafio)
-- Controle de sql injection. (pesquisar as melhores formas de fazer esta ação)
-
-Para uma aplicação real para produção, seria necessário aplicar essas formas de segurança. Provavelmente com mais pesquisa eu acharia algo para deixar ainda mais segura a aplicação.
+- Controle de sql injection. (não aplico no desafio)
+Acredito que, com maior tempo de pesquisa/estudo seria possivel encontrar mais de soluções que podem vir a serem aplicadas.
 
 - EndPoints: acessar com o Bearer token gerado no Authorization.
 - http://localhost:8081/person/all
@@ -81,11 +82,11 @@ Para uma aplicação real para produção, seria necessário aplicar essas forma
 
 Base B:
 
-Escolhi o Mysql, ele é mais performatico que o postgresql e também possui niveis de segurança, mantive o token como controle de acesso. Também já tive experiência com esse banco de dados por esses motivos escolhi ele.
+Escolhi o Mysql, por ser um banco que já estou familiarizado, ser mais performatico que o postgresql e também possuir niveis de segurança. Mantive o token como controle de acesso. 
 
 - Segurança através das contas dos usuários, e autenticação via TOKEN JWT com ROLES.
 
-Poderia ser criado outro micro-serviço para realizar o calculo do score, deixe por meio de um endpoint que retorna um valor randomico.
+Poderia ser criado outro micro-serviço para realizar o calculo do score, deixei por meio de um endpoint que retorna um valor randomico.
 
 - EndPoints: acessar com o Bearer token gerado no Authorization.
 - http://localhost:8082/person/all
@@ -98,18 +99,18 @@ Poderia ser criado outro micro-serviço para realizar o calculo do score, deixe 
 
 Base C:
 
-MongoDB Por se tratar de alta velocidade de acesso aos dados e não necessitar de segurança. Não tenho conhecimento, porém nas pesquisas que fiz achei interessante a solução dado o problema aqui exposto.
+optei por MongoDB, por se tratar de alta velocidade de acesso aos dados e não necessitar de segurança. Acredito ser interessante tal solução dado o problema aqui exposto.
 
 - http://localhost:8083/persons/all
 - http://localhost:8083/persons/{id}
 
-Desta forma as aplicações ficam independentes, para uma melhor disponibilização, manutenção sem que eles se afetem.
+Desta forma as aplicações ficam independentes, para uma melhor disponibilização e manutenção sem que eles se afetem.
 
-Claro que essas são aplicações simples objetivando apenas mostrar uma forma de solução para o exposto.
+Claro que essas são aplicações simples, objetivando apenas ilustrar uma forma de solução para o exposto.
 
 # Escalabilidade
 
-Para escalabilidade com mais pesquisa e estudo, conseguindo ter acesso as ferramentas, eu optaria pelo AWS, como o uso de Lambda, EC2, ElasticSearch etc. Aplicando da melhor forma para os 3 tipos de bases.
+Para escalabilidade, com mais pesquisa, estudo e tendo acesso as ferramentas, eu optaria pelo AWS, como o uso de Lambda, EC2, ElasticSearch etc. Aplicando tais tecnologias de forma adequada aos 3 tipos de bases.
 
 
 
