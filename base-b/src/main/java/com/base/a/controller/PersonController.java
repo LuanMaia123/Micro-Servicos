@@ -29,14 +29,14 @@ public class PersonController {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @GetMapping(value = "/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Person> read(@PathVariable long id) {
         Person person = personRepository.findOne(id);
         return new ResponseEntity<Person>(person, HttpStatus.OK);
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @GetMapping(value = "/calculator")
+    @GetMapping("/calculator")
     public ResponseEntity<String> calculator() {
         Random random = new Random();
         int x = random.nextInt(1001);
