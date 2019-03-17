@@ -28,7 +28,7 @@ public class AssetController {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @GetMapping(value = "/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Asset> read(@PathVariable long id) {
         Asset asset = assetRepository.findOne(id);
         return new ResponseEntity<Asset>(asset, HttpStatus.OK);
