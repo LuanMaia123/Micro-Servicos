@@ -42,7 +42,6 @@ public class DbSeeder implements CommandLineRunner {
         );
 
         this.personRepository.deleteAll();
-        // this.assetRepository.deleteAll();
 
         List<Person> personList = Arrays.asList(person1, person2, person3);
         this.personRepository.save(personList);
