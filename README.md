@@ -106,8 +106,10 @@ optei por MongoDB, por se tratar de alta velocidade de acesso aos dados e não n
 - http://localhost:8083/persons/{id}
 
 Desta forma as aplicações ficam independentes, para uma melhor disponibilização e manutenção sem que eles se afetem.
+Caso tivesse a necessidade das aplicações precisarem de informações entre si, seria possivel com o RestTemplate. Com a annotation @LoadBalanced conseguiriamos pegar essas informações sem definir uma instancia especifica, o Eureka faria o load-balance.
 
 Claro que essas são aplicações simples, objetivando apenas ilustrar uma forma de solução para o exposto.
+
 
 # Escalabilidade
 
