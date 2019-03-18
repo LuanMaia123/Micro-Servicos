@@ -20,6 +20,15 @@ public class Debt {
     @JoinColumn(name = "person_id")
     @JsonBackReference
     private Person person;
+    
+     public Debt(String name, Double valor, Person person) {
+        this.name = name;
+        this.valor = valor;
+        this.person = person;
+    }
+
+    public Debt() {
+    }
 
     public Long getId() {
         return id;
