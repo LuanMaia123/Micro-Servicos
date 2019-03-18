@@ -33,7 +33,7 @@ Clients não escritos em Java podem se comunicar com o Eureka Server através de
 Para a implementação:
 - SpringBoot
 - Maven
-- Oauth JWT
+- Oauth2 JWT
 - Spring Security
 - Eureka server e Cliente
 - Postgresql
