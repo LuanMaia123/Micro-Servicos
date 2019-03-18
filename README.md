@@ -50,7 +50,7 @@ Aqui da pra ver as instancias dos clientes no Eureka server:
 http://localhost:8761/
 
 ### 2-Micro-serviço de autenticação  authorization
-Aplicação simples com dois usuários pré-criados, um com ROLE USER e outro com ADMIN. Para esta ultilizei o banco de dados H2.
+Aplicação simples com dois usuários pré-criados, um com ROLE USER e outro com ADMIN. Para esta ultilizei o banco de dados H2.Em uma aplicação para produção, este banco seria postgresql e poderia ser guardado esses tokens.
 
 Este micro-serviço estará na porta 8080.
 
