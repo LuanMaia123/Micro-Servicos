@@ -24,6 +24,16 @@ public class Person {
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
     @JsonManagedReference
     private Set<Asset> assets;
+    
+    public Person() {
+    }
+
+    public Person(String name, Integer age, String income, String address) {
+        this.name = name;
+        this.age = age;
+        this.income = income;
+        this.address = address;
+    }
 
     public Long getId() {
         return id;
