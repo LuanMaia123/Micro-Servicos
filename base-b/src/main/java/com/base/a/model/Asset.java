@@ -15,6 +15,15 @@ public class Asset {
     private String name;
 
     private Double value;
+    
+    public Asset() {
+    }
+
+    public Asset(String name, Double value, Person person) {
+        this.name = name;
+        this.value = value;
+        this.person = person;
+    }
 
     @ManyToOne
     @JoinColumn(name = "person_id")
