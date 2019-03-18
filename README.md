@@ -46,7 +46,8 @@ Para a implementação:
 ### 1-Service discovery Eureka discovery-server
 Configuração básica para criação do Eureka server.
 
-Com isso resolvi criar mais alguns micro-serviços:
+Aqui da pra ver as instancias dos clientes no Eureka server:
+http://localhost:8761/
 
 ### 2-Micro-serviço de autenticação  authorization
 Aplicação simples com dois usuários pré-criados, um com ROLE USER e outro com ADMIN. Para esta ultilizei o banco de dados H2.
